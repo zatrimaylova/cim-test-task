@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e1dad8;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  width: fit-content;
+}
+
+.advertising-element {
+  background-color: #fff;
+  border: 1px solid #0d274d;
+  width: 320px;
+  border-right: none;
+
+  &:last-child {
+    border-right: 1px solid #0d274d;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.advertising-head {
+  height: 52px;
+  padding: 15px;
+  background-color: #0d274d;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+  &:last-child {
+    border-right: none;
+  }
+
+  > h2 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+}
+
+.advertising-body {
+  background-color: #ffffff;
+  padding: 16px;
+
+  > .advertising-main {
+    min-height: 204px;
+
+    > .advantages-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      > .advantages-item {
+        font-family: Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        color: #000000;
+        max-width: 260px;
+        display: flex;
+        gap: 12px;
+
+        > .done-img {
+          width: 16px;
+          height: 12px;
+          background-image: url("./assets/done.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-top: 4px;
+        }
+      }
+    }
+
+    > .price {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      h3 {
+        font-family: Arial, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 21px;
+        color: #282828;
+        text-align: center;
+      }
+
+      p {
+        color: #282828;
+        text-align: center;
+
+        span {
+          color: #0e9a0b;
+          font-weight: 900;
+          font-size: 20px;
+          line-height: 26px;
+          font-family: Arial, sans-serif;
+        }
+      }
+
+      &.first {
+        padding-top: 28px;
+      }
+
+      &.second {
+        padding-top: 49px;
+      }
+
+      &.third {
+        padding-top: 26px;
+      }
+    }
+  }
+
+  .borderline {
+    border: none;
+    background-color: #00bceb;
+    color: #00bceb;
+    height: 1px;
+    width: 238px;
+    margin: 0 auto;
+  }
+
+  > .advertising-details {
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+
+    > .details-list {
+      display: grid;
+      column-gap: 52px;
+      row-gap: 8px;
+      grid-template-columns: repeat(auto-fit, 110px);
+      font-family: Arial, sans-serif;
+      color: #282828;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+
+      li {
+        text-decoration: underline;
+
+        &::before {
+          content: url("./assets/play.png");
+          padding-right: 10px;
+          height: 15px;
+          width: 10px;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: #00bceb;
+        }
+      }
+    }
+
+    > .button-holder {
+      height: fit-content;
+      padding-top: 10px;
+
+      button {
+        width: 250px;
+        height: 46px;
+        background: #00bceb;
+        border-radius: 6px;
+        outline: none;
+        border: none;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #ffffff;
+        display: block;
+
+        &:hover {
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          transform: ease 0.3s;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 959px) {
+  main {
+    width: 100vw;
+    height: fit-content;
+  }
+
+  .container {
+    width: 400px;
+    flex-direction: column;
+    height: fit-content;
+    gap: 20px;
+  }
+
+  .advertising-element {
+    width: 400px;
+    border: 1px solid #0d274d;
+  }
+
+  .advertising-head {
+    border-right: none;
+  }
+
+  .advertising-body {
+    background-color: #ffffff;
+    padding: 30px;
+
+    .borderline {
+      width: 338px;
+    }
+
+    > .advertising-main {
+      > .advantages-list {
+        > .advantages-item {
+          max-width: 300px !important;
+        }
+      }
+    }
+
+    > .advertising-details {
+      > .details-list {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  main {
+    width: 100vw;
+    height: fit-content;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column;
+    height: fit-content;
+    gap: 20px;
+  }
+
+  .advertising-element {
+    width: 100%;
+    border: none;
+  }
+
+  .advertising-head {
+    border: none;
+  }
+
+  .advertising-body {
+    background-color: #ffffff;
+    padding: 20px;
+
+    .borderline {
+      width: 300px;
+    }
+
+    > .advertising-main {
+      > .advantages-list {
+        > .advantages-item {
+          max-width: 340px !important;
+        }
+      }
+    }
+  }
+}

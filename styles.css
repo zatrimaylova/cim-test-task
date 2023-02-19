@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e1dad8;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: auto;
+}
+
+.container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.advertising-element {
+  background-color: #fff;
+  border: 1px solid #0d274d;
+  width: 320px;
+  border-right: none;
+}
+.advertising-element:last-child {
+  border-right: 1px solid #0d274d;
+}
+.advertising-element li {
+  list-style: none;
+}
+
+.advertising-head {
+  height: 52px;
+  padding: 15px;
+  background-color: #0d274d;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.advertising-head:last-child {
+  border-right: none;
+}
+.advertising-head > h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.advertising-body {
+  background-color: #ffffff;
+  padding: 16px;
+}
+.advertising-body > .advertising-main {
+  min-height: 204px;
+}
+.advertising-body > .advertising-main > .advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.advertising-body > .advertising-main > .advantages-list > .advantages-item {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  color: #000000;
+  max-width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+.advertising-body > .advertising-main > .advantages-list > .advantages-item > .done-img {
+  width: 16px;
+  height: 12px;
+  background-image: url("./assets/done.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 4px;
+}
+.advertising-body > .advertising-main > .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 14px;
+}
+.advertising-body > .advertising-main > .price h3 {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21px;
+  color: #282828;
+  text-align: center;
+}
+.advertising-body > .advertising-main > .price p {
+  color: #282828;
+  text-align: center;
+}
+.advertising-body > .advertising-main > .price p span {
+  color: #0e9a0b;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: Arial, sans-serif;
+}
+.advertising-body > .advertising-main > .price.first {
+  padding-top: 28px;
+}
+.advertising-body > .advertising-main > .price.second {
+  padding-top: 49px;
+}
+.advertising-body > .advertising-main > .price.third {
+  padding-top: 26px;
+}
+.advertising-body .borderline {
+  border: none;
+  background-color: #00bceb;
+  color: #00bceb;
+  height: 1px;
+  width: 238px;
+  margin: 0 auto;
+}
+.advertising-body > .advertising-details {
+  padding-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 180px;
+}
+.advertising-body > .advertising-details > .details-list {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 52px;
+     -moz-column-gap: 52px;
+          column-gap: 52px;
+  row-gap: 8px;
+  grid-template-columns: repeat(auto-fit, 110px);
+  font-family: Arial, sans-serif;
+  color: #282828;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.advertising-body > .advertising-details > .details-list li {
+  text-decoration: underline;
+}
+.advertising-body > .advertising-details > .details-list li::before {
+  content: url("./assets/play.png");
+  padding-right: 10px;
+  height: 15px;
+  width: 10px;
+}
+.advertising-body > .advertising-details > .details-list li:hover {
+  cursor: pointer;
+  color: #00bceb;
+}
+.advertising-body > .advertising-details > .button-holder {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 10px;
+}
+.advertising-body > .advertising-details > .button-holder button {
+  width: 250px;
+  height: 46px;
+  background: #00bceb;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  display: block;
+}
+.advertising-body > .advertising-details > .button-holder button:hover {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-transform: ease 0.3s;
+          transform: ease 0.3s;
+  cursor: pointer;
+}
+
+@media (max-width: 959px) {
+  main {
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .container {
+    width: 400px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 20px;
+  }
+  .advertising-element {
+    width: 400px;
+    border: 1px solid #0d274d;
+  }
+  .advertising-head {
+    border-right: none;
+  }
+  .advertising-body {
+    background-color: #ffffff;
+    padding: 30px;
+  }
+  .advertising-body .borderline {
+    width: 338px;
+  }
+  .advertising-body > .advertising-main > .advantages-list > .advantages-item {
+    max-width: 300px !important;
+  }
+  .advertising-body > .advertising-details > .details-list {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 376px) {
+  main {
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 20px;
+  }
+  .advertising-element {
+    width: 100%;
+    border: none;
+  }
+  .advertising-head {
+    border: none;
+  }
+  .advertising-body {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  .advertising-body .borderline {
+    width: 300px;
+  }
+  .advertising-body > .advertising-main > .advantages-list > .advantages-item {
+    max-width: 340px !important;
+  }
+}
