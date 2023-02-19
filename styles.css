@@ -38,7 +38,7 @@ main {
 }
 
 .advertising-element {
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #0d274d;
   width: 320px;
   border-right: none;
@@ -290,7 +290,6 @@ main {
     border: none;
   }
   .advertising-body {
-    background-color: #ffffff;
     padding: 20px;
   }
   .advertising-body .borderline {
